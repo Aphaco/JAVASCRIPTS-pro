@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    width: 100%;
+    background-image: url("images/cl.jpeg");
+    /* background-position: center; */
+    /* filter: brightness(10%); */
+}
+h1{
+    width: 100%;
+    font-size: 120px;
+    /* background-image: url(" images/four.jpeg "); */
+    background-clip: text;
+    /* background-color: transparent; */
+    -webkit-background-clip: text;
+    color: rgb(154, 195, 122);
+    margin-top: 0;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    font-family: 'Bangers', cursive;
+
+}
+#firstinput{
+position: relative;
+top: 250px;
+right: 120px;
+width: 920px;
+}
+div{
+width: 400px;
+border: 2px none;
+position: relative;
+bottom: 44px;
+height: 200px;
+left: 535px;
+font-weight: bold;
+}
+
+#field{
+    display: flexbox;
+    position: relative;
+    top: 290px;
+    margin-bottom: 100px;
+    width: 500px;
+    overflow-y: auto;
+    right: 0px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+}
+label{
+    font-size: 40px;
+    position: relative;
+    right: 120px;
+    letter-spacing: 2px;
+    color: antiquewhite;
+    width: 340px;
+}
+input{
+    border-radius: 0px;
+    width: 100px;
+    font-size: 20px;
+    height: 40px;
+    position: relative;
+    right: 80px;
+    border-style: none;
+    transition: 3s;
+}
+input:hover{
+    border-style: groove;
+    border-color: rgb(255, 72, 0);
+
+}
+#input1{
+    margin-top: 10px;
+    position: relative;
+    right: 110px;
+    font-weight: bolder;
+    border-radius: 6px;
+}
+#input2{
+    font-weight: bolder;
+    border-radius: 6px;
+
+
+}
+button{
+    text-decoration: none;
+    border-radius: 40px;
+    position: relative;
+    top: 120px;
+    right: 440px;
+    font-size: 30px;
+    color: #098be2 ;
+    background-color: rgb(34, 32, 32);
+    transition: 2s;
+    font-weight: bolder;
+}
+ button:hover{
+    letter-spacing: 2px;
+    /* background-color: orange; */
+    color: rgb(216, 35, 35);
+    font-weight: 900; 
+}
+button:active::after{
+    background-color: rgb(0, 255, 47);
+    /* color: rgb(199, 15, 15); */
+}

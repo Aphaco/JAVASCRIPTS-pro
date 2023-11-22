@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGA TIMESTABLE</title>
+    <link rel="stylesheet" href="time.css">
+</head>
+<body>
+    <h1>MEGA TM-TABLE</h1>
+    <div id="firstinput">
+        <label for="NUMBER">ENTER YOUR NUMBER</label>
+        <input class="input1" id="input1" type="number" required><br><p>
+        <label for="LENGTH">ENTER THE LENGTH </label>
+        <input id="input2" type="number" required>
+        <button onclick="times()">SUBMIT</button>
+    </div>
+    <div id="field"></div>
+
+    <script>
+
+        function times() {
+            var inpEL = document.getElementById("input1");
+            var curinp = parseInt(inpEL.value);
+            var inpEL1 = document.getElementById("input2");
+            var curinp1 = parseInt(inpEL1.value);
+            var fieldDiv = document.getElementById("field");
+            fieldDiv.innerHTML = curinp +" Times Table" ;
+
+
+            var i = 1;
+            function displayResult() {
+                if (i <= curinp1){
+                    var result = curinp + " x " + i + " = " + i * curinp;
+                    var resultParagraph = document.createElement("p");
+                    resultParagraph.textContent = result;
+                    fieldDiv.appendChild(resultParagraph);
+                    i++;
+                    setTimeout(displayResult, 2000);
+                }
+            }
+
+            displayResult();
+        }
+    </script>
+</body>
+</html>
